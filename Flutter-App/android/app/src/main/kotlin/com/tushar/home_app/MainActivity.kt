@@ -1,0 +1,6 @@
+package com.tushar.home_app
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
