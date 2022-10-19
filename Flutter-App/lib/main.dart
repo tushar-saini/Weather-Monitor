@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
-
+import 'package:home_app/CRED.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
@@ -11,8 +11,8 @@ Future<void> main() async {
 
   try {
     final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: 'tushar.saini1285@gmail.com',
-        password: '9632587410'
+        email: USERNAME,
+        password: PASSWORD,
     );
   } on FirebaseAuthException catch (e) {
     if (e.code == 'user-not-found') {
